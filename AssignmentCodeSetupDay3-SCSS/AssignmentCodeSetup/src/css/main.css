@@ -1,0 +1,59 @@
+.navcontainer {
+  display: inline-block; }
+  .navcontainer h1 {
+    float: left; }
+  .navcontainer ul {
+    margin-left: 650px;
+    margin-top: 4%;
+    float: right; }
+  .navcontainer a {
+    color: #1f89bb;
+    text-decoration: none; }
+    .navcontainer a:hover {
+      font-weight: bold;
+      color: #188088; }
+  .navcontainer li {
+    padding: 10px;
+    display: inline;
+    list-style-type: none; }
+  .navcontainer li:nth-child(6) {
+    border-left: 1px solid #1f89bb;
+    border-right: 1px solid #1f89bb; }
+
+.banner {
+  color: white;
+  padding: 80px;
+  text-align: center;
+  background-image: url("../assets/intro-bg.png"); }
+  .banner ul li {
+    padding: 3px;
+    display: inline;
+    list-style-type: none; }
+
+.feature {
+  text-align: center; }
+  .feature::after {
+    content: " ";
+    margin-left: 640px;
+    display: block;
+    position: absolute;
+    border: 1px solid #1f89bb;
+    width: 5.5%; }
+
+section {
+  margin: 1% 2%; }
+
+.product-card {
+  display: inline-block;
+  width: 30%;
+  border: 1px solid #ececec; }
+  .product-card img {
+    width: 100%; }
+
+.card-content {
+  background-color: white;
+  position: relative;
+  padding: 2px 16px; }
+
+/*using mixin for different themes  */
+/*using mixin for different viewports  */

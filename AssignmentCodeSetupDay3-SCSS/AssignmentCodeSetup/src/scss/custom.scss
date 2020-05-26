@@ -1,0 +1,98 @@
+$highlighter: rgb(31, 137, 187);
+$text-color: white;
+$link-color: rgb(24, 128, 136);
+
+
+
+.navcontainer{
+    
+    display: inline-block;
+    h1{
+        float: left;
+    }
+    ul{
+        margin-left: 650px;
+        margin-top: 4%;
+        float: right;
+    }
+    a{
+        color: $highlighter;
+        text-decoration: none;
+        &:hover{
+            font-weight: bold;
+            color: $link-color;
+        }
+    }
+   li{
+
+        padding: 10px;
+        display: inline;
+        list-style-type: none;
+    }
+
+    li:nth-child(6){
+    border-left:1px solid $highlighter ;
+    border-right: 1px solid $highlighter;
+    }
+}
+
+.banner{
+    color: $text-color;
+    padding: 80px;
+    text-align: center;
+    background-image: url('../assets/intro-bg.png');
+   ul{
+      li{
+          padding: 3px;
+          display: inline;
+          list-style-type: none;
+      } 
+      
+   }
+}
+
+
+
+.feature{
+    text-align: center;
+    &::after{
+        content: " ";
+        margin-left: 640px ;
+        display: block;
+        position: absolute;
+        border: 1px solid $highlighter;
+        width: 5.5%;
+    }
+}
+
+section{
+    margin: 1% 2%;
+}
+
+.product-card{
+    display: inline-block;
+    width:30%;
+    border: 1px solid #ececec;
+    img{
+        width: 100%;
+    }
+}
+
+.card-content{
+    background-color: $text-color;
+    position: relative;
+    padding: 2px 16px;
+}
+
+
+
+/*using mixin for different themes  */
+@mixin Themetransform($colortheme){
+
+}
+
+/*using mixin for different viewports  */
+@mixin Windowtranform() {
+   
+}
+

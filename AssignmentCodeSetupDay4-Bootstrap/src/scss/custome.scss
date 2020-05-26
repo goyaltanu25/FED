@@ -1,0 +1,75 @@
+.container-fluid{
+    margin:0px;
+    padding: 0px;
+    .member{
+        border-right: 1px solid;
+        border-left: 1px solid;
+    }
+    .fill-space{
+        margin-left: 300px;
+      }
+    .jumbotron{
+        background-image: url('../assets/intro-bg.png');
+        border-radius: unset;
+        .jumbo-content{
+            color: white;
+            text-align: center;
+        }
+        .icons{
+            list-style-type: none;
+            li{
+                display: inline;
+            }
+        }
+
+        
+    }
+   
+    
+      
+}
+.hr-line{
+    margin: 2% 1%;
+    text-align: center;
+    &::after {
+    display: block;
+    position: absolute;
+    border: 1px solid #3aa0dc;
+    content: " ";
+    width: 7%;
+    margin: 4px 615px;
+}
+}    
+
+
+section{
+    .card{
+        .card-body{
+            padding: 8px;
+            background-color: white;
+            position: relative;
+            margin-top: -140px;
+        }
+        .card-title{
+            h4{
+                float: left;
+                padding: 0px;
+                margin: 0px;
+            }
+            p{
+                float: right;
+            }
+         }
+        .card-text{
+           height:42%;
+           margin-top: 40px;
+        } 
+        
+       
+    }
+   
+}
+
+
+
+

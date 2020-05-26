@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form html5</title>
+    <script>
+        function display(){
+            console.log( 'rangevalue',document.getElementById("range").value);
+            console.log( 'datevalue',document.getElementById("date").value);
+            document.getElementById("colorOut").innerHTML = document.getElementById("color").value;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="parent">
+        <form class="child">
+            <label for="color"> Choose Color</label>
+            <input type="color" id="color" name="color"/>
+            <output id="colorOut"></output><br>
+            <label for="range">JS Skills</label>
+            <input type="range" id="range" minlength="0" maxlength="100"/><br>
+            <label for="date">Choose Date</label>
+            <input type="date" id="date"/><br>
+        </form>
+        <button  onclick="display()">Get Output</button>
+    </div>
+</body>
+
+</html>
